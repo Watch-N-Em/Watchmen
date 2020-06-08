@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './watchmen_logo-02.png';
 import './App.css';
 
 function App() {
