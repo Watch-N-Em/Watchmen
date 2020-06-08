@@ -1,20 +1,21 @@
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
-// name, badge number, police department, city, county, state
+// name, badge number, police department
 const officerSchema = new Schema({
   name: {
     type: String,
     trim: true,
-    required: "Enter a name for officer"
+    default: "Unknown"
   },
-  value: {
-    type: Number,
-    required: "Enter an amount"
+  badgeNumber: {
+    type: String,
+    trim: true,
+    default: "Unknown"
   },
-  date: {
-    type: Date,
-    default: Date.now
+  policeDept : {
+      type: Schema.Types.ObjectId,
+      ref: "PD"
   }
 });
 
