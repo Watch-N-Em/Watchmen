@@ -5,7 +5,7 @@ import './landing.css';
 function LandingPage() {
     return (
         <div className="App">
-            <a href="userpostform">Post something</a>
+            <a href="userpostform"><h1>Upload Something</h1></a>
             <header className="App-header">
                 <h1 className="brand-name">
                     wATCHN EM
