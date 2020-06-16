@@ -2,13 +2,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const routes = require('./routes');
-var cloudinary = require('cloudinary').v2;
+// var cloudinary = require('cloudinary').v2;
 
-cloudinary.config({
-    cloud_name: 'dyjugfrby',
-    api_key: '889553419496734',
-    api_secret: 'PzFatjyS79RYGTiPiDkdriHNkUY'
-});
+// cloudinary.config({
+//     cloud_name: '',
+//     api_key: '',
+//     api_secret: ''
+// });
 
 // express instance
 const app = express()
@@ -27,13 +27,13 @@ if (process.env.NODE_ENV === "production") {
 };
 
 // app.use(routes);
-app.post("/save/image", function (req, res) {
-    // image
-    console.log(req.body);
+// app.post("/save/image", function (req, res) {
+//     // image
+//     console.log(req.body);
 
-    cloudinary.uploader.upload(req.body.fileName,
-        function (error, result) { console.log(result, error) });
-})
+//     cloudinary.uploader.upload(req.body.fileName,
+//         function (error, result) { console.log(result, error) });
+// })
 
 // video
 // cloudinary.uploader.upload("earth.mp4",
